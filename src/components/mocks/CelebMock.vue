@@ -48,10 +48,8 @@
             <v-text-field
               placeholder="Search"
               prepend-inner-icon="mdi-magnify"
-              outlined
-              clearable
-              dense
-              :color="secondary"
+              outlined clearable dense dark
+              :color="background"
               :background-color="secondary"
             ></v-text-field>
           </v-col>

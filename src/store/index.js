@@ -3,6 +3,22 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+// #F5438F
+// #F36944
+// #193EAD
+// #FF5001
+// #EF3341
+// #A8192E
+// #4F85FF
+// #3AD658
+// #00AA83
+// #0083C3
+// #C80F2E
+// #763EE6
+// #FFD966
+
+
+
 export default new Vuex.Store({
   state: {
     palets: [
