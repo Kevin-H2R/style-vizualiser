@@ -36,13 +36,15 @@ export default new Vuex.Store({
       { name: 'Ajoa', 2: "#FFFFFF", 3: "#000000", 5: "#BEE3DB", 4: "#FAF9F9", 1:"#F65D5D", background: "#FFFFFF"},
     ],
     selectedPalet: null,
-    styles: {
-      mainTitle: "#00FF00"
-    }
+    styles: {},
+    selectedElement: '',
   },
   mutations: {
-    setColorFor(state, data) {
-      state.styles[data.id] = data.color
+    setColorForSelectedElement(state, color) {
+      state.styles[state.selectedElement] = color
+    },
+    selectElement(state, element) {
+      state.selectedElement = element
     },
     setSelectedPalet(state, index) {
       if (index === undefined) {
@@ -50,7 +52,7 @@ export default new Vuex.Store({
         return
       }
       state.selectedPalet = state.palets[index]
-    }
+    },
   },
   actions: {
   },
@@ -60,5 +62,7 @@ export default new Vuex.Store({
     palets: (state) => state.palets,
     styles: (state) => state.styles,
     selectedPalet: (state) => state.selectedPalet,
+    selectedElement: (state) => state.selectedElement,
+    selectedElementColor: (state) => state.styles[state.selectedElement]
   }
 })

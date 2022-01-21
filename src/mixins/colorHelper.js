@@ -20,10 +20,13 @@ export default {
         return null
       }
       const styles = this.$store.getters.styles[ref]
-      if (styles === undefined) {
+      if (styles === undefined || styles === undefined) {
         return null
       }
       return 'color: ' + styles
+    },
+    selectElement(element) {
+      this.$store.commit('selectElement', element)
     }
   },
   computed: {

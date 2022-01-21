@@ -3,12 +3,27 @@
     <v-card-text class="px-0 pb-0">
       <v-container fluid>
         <v-row align="center">
-          <v-col cols="3" class="font-weight-bold big-text"
-            :style="primaryColor" style="border-bottom: 2px solid" ref="mainTitle">
-            AJOA
+          <v-col cols="3">
+            <v-btn text tile ref="mainTitle"
+              class="font-weight-bold big-text"
+              :style="primaryColor" style="border-bottom: 2px solid"
+              @click="selectElement('mainTitle')"
+            >
+              AJOA
+            </v-btn>
           </v-col>
-          <v-col cols="6" class="font-weight-bold" :style="secondaryColor">CelebShop</v-col>
-          <v-col cols="3"  :style="secondaryColor">Login</v-col>
+          <v-col cols="6">
+            <v-btn text tile
+               class="font-weight-bold small-text" :style="secondaryColor">
+            CelebShop
+            </v-btn>
+          </v-col>
+          <v-col cols="3">
+            <v-btn text tile
+               class="font-weight-bold smaller-text" :style="secondaryColor"> 
+              Login
+            </v-btn>
+          </v-col>
         </v-row>
 
         <v-row>
