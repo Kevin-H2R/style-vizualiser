@@ -14,7 +14,8 @@
               <v-list-item  v-for="(palet, index) in $store.getters.palets" 
                 :key="'palet_' + index">
                 <v-list-item-content>
-                  <v-col cols="2"><v-sheet rounded height="25px" :color="palet['1']"></v-sheet></v-col>
+                  <v-list-item-subtitle>{{ palet['name'] }}</v-list-item-subtitle>
+                  <v-col cols="2" class="pl-0"><v-sheet rounded height="25px" :color="palet['1']"></v-sheet></v-col>
                   <v-col cols="2"><v-sheet rounded height="25px" :color="palet['2']"></v-sheet></v-col>
                   <v-col cols="2"><v-sheet rounded height="25px" :color="palet['3']"></v-sheet></v-col>
                   <v-col cols="2"><v-sheet rounded height="25px" :color="palet['4']"></v-sheet></v-col>

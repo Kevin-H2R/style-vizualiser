@@ -13,10 +13,25 @@ export default {
         return '#FFFFFF'
       }
       return palet[index]
+    },
+    getStyleForRefs(element) {
+      const ref = Object.keys(element.$refs)[0]
+      if (ref === undefined) {
+        return null
+      }
+      const styles = this.$store.getters.styles[ref]
+      if (styles === undefined) {
+        return null
+      }
+      return 'color: ' + styles
     }
   },
   computed: {
-    primaryColor() {
+    primaryColor(e) {
+      const elementStyle = this.getStyleForRefs(e)
+      if (elementStyle !== null) {
+        return elementStyle
+      }
       return this.getColorStyleAtIndex(1)
     },
     secondaryColor() {

@@ -29,14 +29,16 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     palets: [
-      {2: "#223843", 5: "#EFF1F3", 4: "#DBD3D8", 3: "#D8B4A0", 1:"#D77A61", background: "#FFFFFF"},
-      {5: "#0029B6", 2: "#003F88", 3: "#00509D", 1: "#FDC500", 4:"#FFD500", background: "#FFFFFF"},
-      {5: "#BC4B51", 4: "#003F88", 3: "#FFD6DE", 1: "#FDC500", 2:"#F4F4F4", background: "#344955"},
-      {2: "#555B6E", 3: "#89B0AE", 5: "#BEE3DB", 4: "#FAF9F9", 1:"#FFD6DA", background: "#FFFFFF"},
-      {2: "#FFFFFF", 3: "#000000", 5: "#BEE3DB", 4: "#FAF9F9", 1:"#F65D5D", background: "#FFFFFF"},
+      { name: 'Theme 1', 2: "#223843", 5: "#EFF1F3", 4: "#DBD3D8", 3: "#D8B4A0", 1:"#D77A61", background: "#FFFFFF"},
+      { name: 'Theme 2', 5: "#0029B6", 2: "#003F88", 3: "#00509D", 1: "#FDC500", 4:"#FFD500", background: "#FFFFFF"},
+      { name: 'Theme 3', 5: "#BC4B51", 4: "#003F88", 3: "#FFD6DE", 1: "#FDC500", 2:"#F4F4F4", background: "#344955"},
+      { name: 'Theme 4', 2: "#555B6E", 3: "#89B0AE", 5: "#BEE3DB", 4: "#FAF9F9", 1:"#FFD6DA", background: "#FFFFFF"},
+      { name: 'Ajoa', 2: "#FFFFFF", 3: "#000000", 5: "#BEE3DB", 4: "#FAF9F9", 1:"#F65D5D", background: "#FFFFFF"},
     ],
     selectedPalet: null,
-    styles: {}
+    styles: {
+      mainTitle: "#00FF00"
+    }
   },
   mutations: {
     setColorFor(state, data) {

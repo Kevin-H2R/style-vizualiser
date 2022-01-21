@@ -4,8 +4,9 @@
       <v-container fluid>
         <v-row align="center">
           <v-col cols="3" class="font-weight-bold big-text"
-            :style="primaryColor" style="border-bottom: 2px solid">AJOA
-            </v-col>
+            :style="primaryColor" style="border-bottom: 2px solid" ref="mainTitle">
+            AJOA
+          </v-col>
           <v-col cols="6" class="font-weight-bold" :style="secondaryColor">CelebShop</v-col>
           <v-col cols="3"  :style="secondaryColor">Login</v-col>
         </v-row>
