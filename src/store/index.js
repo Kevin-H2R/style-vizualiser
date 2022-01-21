@@ -6,15 +6,24 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     palets: [
-      {1: "#223843", 2: "#EFF1F3", 3: "#DBD3D8", 4: "#D8B4A0", 5:"#D77A61"},
-      {1: "#0029B6", 2: "#003F88", 3: "#00509D", 4: "#FDC500", 5:"#FFD500"},
-      {1: "#555B6E", 2: "#89B0AE", 3: "#BEE3DB", 4: "#FAF9F9", 5:"#FFD6DA"},
+      {2: "#223843", 5: "#EFF1F3", 4: "#DBD3D8", 3: "#D8B4A0", 1:"#D77A61", background: "#FFFFFF"},
+      {5: "#0029B6", 2: "#003F88", 3: "#00509D", 1: "#FDC500", 4:"#FFD500", background: "#FFFFFF"},
+      {5: "#BC4B51", 4: "#003F88", 3: "#FFD6DE", 1: "#FDC500", 2:"#F4F4F4", background: "#344955"},
+      {2: "#555B6E", 3: "#89B0AE", 5: "#BEE3DB", 4: "#FAF9F9", 1:"#FFD6DA", background: "#FFFFFF"},
     ],
+    selectedPalet: null,
     styles: {}
   },
   mutations: {
     setColorFor(state, data) {
       state.styles[data.id] = data.color
+    },
+    setSelectedPalet(state, index) {
+      if (index === undefined) {
+        state.selectedPalet = null
+        return
+      }
+      state.selectedPalet = state.palets[index]
     }
   },
   actions: {
@@ -23,6 +32,7 @@ export default new Vuex.Store({
   },
   getters: {
     palets: (state) => state.palets,
-    styles: (state => state.styles)
+    styles: (state) => state.styles,
+    selectedPalet: (state) => state.selectedPalet,
   }
 })
