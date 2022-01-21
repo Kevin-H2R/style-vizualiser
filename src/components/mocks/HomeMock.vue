@@ -15,9 +15,9 @@
           <v-col class="pb-0 small-text text-end" :style="thirdColor">View more</v-col>
         </v-row>
         <v-row class="scrollable-row">
-          <v-col cols="5" class="pb-0"><v-sheet height="200" :color="secondary" rounded></v-sheet></v-col>
-          <v-col cols="5" class="pb-0"><v-sheet height="200" :color="secondary" rounded></v-sheet></v-col>
-          <v-col cols="5" class="pb-0"><v-sheet height="200" :color="secondary" rounded></v-sheet></v-col>
+          <v-col cols="5" class="pb-0"><v-skeleton-loader type="card" height="200" :color="secondary" rounded></v-skeleton-loader></v-col>
+          <v-col cols="5" class="pb-0"><v-skeleton-loader type="card" height="200" :color="secondary" rounded></v-skeleton-loader></v-col>
+          <v-col cols="5" class="pb-0"><v-skeleton-loader type="card" height="200" :color="secondary" rounded></v-skeleton-loader></v-col>
         </v-row>
         <v-row class="scrollable-row">
           <v-col cols="5" class="pt-0">
@@ -39,9 +39,9 @@
           <v-col class="pb-0 small-text text-end" :style="thirdColor">View more</v-col>
         </v-row>
         <v-row class="scrollable-row" style="height: 150px;">
-          <v-col cols="5" class="pb-0"><v-sheet height="200" :color="secondary" rounded></v-sheet></v-col>
-          <v-col cols="5" class="pb-0"><v-sheet height="200" :color="secondary" rounded></v-sheet></v-col>
-          <v-col cols="5" class="pb-0"><v-sheet height="200" :color="secondary" rounded></v-sheet></v-col>
+          <v-col cols="5" class="pb-0"><v-skeleton-loader type="card" height="200" :color="secondary" rounded></v-skeleton-loader></v-col>
+          <v-col cols="5" class="pb-0"><v-skeleton-loader type="card" height="200" :color="secondary" rounded></v-skeleton-loader></v-col>
+          <v-col cols="5" class="pb-0"><v-skeleton-loader type="card" height="200" :color="secondary" rounded></v-skeleton-loader></v-col>
         </v-row>
 
         <v-row style="position: absolute; bottom: 0; width: 100%">

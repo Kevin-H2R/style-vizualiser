@@ -17,6 +17,13 @@ Vue.use(Vuex)
 // #763EE6
 // #FFD966
 
+// #CE7BB0
+// #FFA1C9
+// #26865c
+// #f7bc16
+// #ff8500
+// #1ab8e8
+
 
 
 export default new Vuex.Store({
@@ -26,6 +33,7 @@ export default new Vuex.Store({
       {5: "#0029B6", 2: "#003F88", 3: "#00509D", 1: "#FDC500", 4:"#FFD500", background: "#FFFFFF"},
       {5: "#BC4B51", 4: "#003F88", 3: "#FFD6DE", 1: "#FDC500", 2:"#F4F4F4", background: "#344955"},
       {2: "#555B6E", 3: "#89B0AE", 5: "#BEE3DB", 4: "#FAF9F9", 1:"#FFD6DA", background: "#FFFFFF"},
+      {2: "#FFFFFF", 3: "#000000", 5: "#BEE3DB", 4: "#FAF9F9", 1:"#F65D5D", background: "#FFFFFF"},
     ],
     selectedPalet: null,
     styles: {}

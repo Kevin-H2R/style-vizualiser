@@ -1,6 +1,6 @@
 <template>
   <v-list-item>
-    <v-list-item-avatar :color="primary">
+    <v-list-item-avatar>
       <v-skeleton-loader type="avatar" />
     </v-list-item-avatar>
     <v-list-item-content>
